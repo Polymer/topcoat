@@ -1,26 +1,38 @@
 ﻿<!doctype html>
 <html>
 <head>
-  <title></title>
-  <script src="../../polymer/polymer.js"></script>
-  <link href="topcoat-0.4.1/css/topcoat-mobile-dark.min.css" rel="stylesheet" />
-  <link rel="import" href="topcoat.html">
+  <title>topcoat elements</title>
+  <script src="../platform/platform.js"></script>
+  <link rel="import" href="topcoat-button.html">
+  <link rel="import" href="topcoat-icon-button.html">
+  <link rel="import" href="topcoat-list.html">
+  <link rel="import" href="topcoat-navbar.html">
+  
 </head>
 <body>
+  <topcoat-navbar>
+    <topcoat-navbar-item class="left quarter">
+      <a is="topcoat-icon-button" class="quiet" icon="menu-stack"></a>
+    </topcoat-navbar-item>
+    <topcoat-navbar-title class="center half">Header</topcoat-navbar-title>
+    <topcoat-navbar-item class="right quarter">
+      <a is="topcoat-icon-button" class="quiet" icon="menu-stack"></a>
+    </topcoat-navbar-item>
+  </topcoat-navbar>
   <br>
-  <topcoat-button>Button Coat</topcoat-button>
-  <topcoat-button active>Button Boat</topcoat-button>
-  <topcoat-button disabled>Mutton Stoat</topcoat-button>
+  <a is="topcoat-button">Button Coat</a>
+  <a is="topcoat-button" class="active">Button Boat</a>
+  <a is="topcoat-button" class="disabled">Mutton Stoat</a>
   <br><br>
-  <topcoat-icon-button></topcoat-icon-button>
-  <topcoat-icon-button></topcoat-icon-button>
+  <a is="topcoat-icon-button" icon="menu-stack"></a>
+  <a is="topcoat-icon-button" icon="menu-stack" large></a>
   <br><br>
-  <topcoat-list header="Heya">
-    <li is="topcoat-list-item">Hello</li>
-    <li is="topcoat-list-item">World</li>
-    <li is="topcoat-list-item">Welt</li>
-    <li is="topcoat-list-item">Tag</li>
+  <topcoat-list>
+    <h3 class="header">Header</h3>
+    <li>Hello</li>
+    <li>World</li>
+    <li>Tag</li>
+    <li>Welt</li>
   </topcoat-list>
-  <br><br>
 </body>
 </html>
