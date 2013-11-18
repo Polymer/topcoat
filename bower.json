@@ -1,0 +1,7 @@
+{
+  "name": "topcoat",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#master"
+  }
+}
